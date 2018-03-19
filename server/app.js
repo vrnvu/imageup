@@ -3,7 +3,7 @@ const path = require('path');
 const cors = require('cors');
 
 const indexRoutes = require('./routes/index');
-//const tasksRoutes = require('./routes/tasks');
+const imagesRoutes = require('./routes/images');
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.use(express.urlencoded({extended: false}));
 
 // routes
  app.use('/', indexRoutes);
-//app.use('/api', tasksRoutes);
+ app.use('/api', imagesRoutes);
 
 // static files
 app.use(express.static(path.join(__dirname, 'dist')));

@@ -9,4 +9,11 @@ router.get('/images', (req, res, next) => {
   });
 });
 
+router.get('/images/:id', (req, res, next) => {
+  db.images.findOne({_id: req.params.id}, (err, image) => {
+    if (err) return next(err);
+    res.json(image);
+  });
+});
+
 module.exports = router;

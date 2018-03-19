@@ -1,5 +1,7 @@
 # Imageup
 
+![Screenshot](imageup.png)
+
 Image uploader using MEAN stack
 ## Table of content
 

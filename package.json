@@ -1,24 +1,26 @@
 {
-  "name": "imageup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "start": "node ./server/app.js",
-    "dev": "nodemon ./server/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "cors": "^2.8.4",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2",
-    "express-promise-router": "^2.0.0",
-    "mongojs": "^2.4.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.13.2"
-  }
+    "$schema": "http://json.schemastore.org/package",
+    "author": "",
+    "dependencies": {
+        "cors": "^2.8.4",
+        "ejs": "^2.5.7",
+        "express": "^4.16.2",
+        "express-promise-router": "^2.0.0",
+        "mongojs": "^2.4.1"
+    },
+    "description": "",
+    "devDependencies": {
+        "node": "^9.11.0",
+        "nodemon": "^1.13.2"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "main": "./server/app.js",
+    "name": "imageup",
+    "scripts": {
+        "dev": "nodemon ./server/app.js",
+        "start": "node ./server/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "1.0.0"
 }
